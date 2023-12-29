@@ -1,0 +1,215 @@
+body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+nav{
+    height: fit-content;
+    width: 100%;
+    padding-block: 1%;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    align-items: center;
+    
+}
+
+.navTitleContainer{
+    height: fit-content;
+    width: 35%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navTitleContainer h1, .navTitleContainer h2{
+    margin: 0;
+}
+
+.navTitleContainer h1{
+    color: red;
+    font: 400 4vw 'Alfa Slab One', serif;;
+}
+
+.navTitleContainer h2{
+    color: green;
+    font: 400 2vw 'Bebas Neue', sans-serif;
+
+}
+
+nav ul{
+    padding-block: 1%;
+    margin-block: 1%;
+    background-color: #4F6F52;
+    border-radius: 5vw;
+    list-style-type: none;
+    overflow: hidden;
+    width: 80%;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    color: white;
+    font: 300 1.25vw 'Roboto';
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 200ms;
+    padding: 3% 3%;
+}
+
+nav a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* --------------------------------- GLOBAL CLASSES --------------------------------- */
+.section {
+    height: fit-content;
+    width: 80%;
+    padding-bottom: 0;
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+/* --------------------------------- HOME PAGE --------------------------------- */
+
+#home_landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    transition: 200ms;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gallery div img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#backBtn, #nextBtn{
+    cursor: pointer;
+    margin: 1vw;
+    transition: 200ms;
+    width: 3vw;
+}
+
+#backBtn:hover, #nextBtn:hover{
+    transform: scale(1.1);
+}
+
+#bookBtn{
+    background-color: #4F6F52;
+    border: none;
+    border-radius: 2vw;
+    color: white;
+    font: 400 1.5vw 'Roboto', sans-serif;
+    margin-block: 3%;
+    padding-block: 1vw;
+    padding-inline: 2vw;
+    transition: 100ms;
+}
+
+    #bookBtn:hover{
+        background-color: white;
+        color: #4F6F52;
+        cursor: pointer;
+        outline: 0.25vw solid #4F6F52;
+    }
+
+/* --------------------------------- ABOUT SECTION --------------------------------- */
+
+#about{
+    font: 300 1.25vw 'Roboto';
+    margin: 0;
+}
+
+/* --------------------------------- BUS COACHES SECTION --------------------------------- */
+
+.busCoaches{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-block: 5%;
+    width: 100%;
+}
+
+.busCoaches h1{
+    color: #4F6F52;
+    font: 400 5vw 'Bebas Neue', sans-serif;
+}
+
+.busCoaches ul{
+    background-color: white;
+    border: 0.25vw solid #4F6F52;
+    border-radius: 5vw;
+    list-style-type: none;
+    margin-block: 1%;
+    overflow: hidden;
+    padding: 1% 0 1% 0;
+    width: 50%;
+}
+
+.busCoaches li{
+    display: inline;
+    font: 300 1.5vw 'Roboto';
+    margin-inline: 2%;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 200ms;
+    padding: 3%;
+}
+
+.busCoaches li:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #4F6F52;
+}
