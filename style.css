@@ -1,4 +1,5 @@
 body{
+    background-color: azure;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -10,8 +11,9 @@ body{
 }
 
 nav{
+    background-color: white;
     height: fit-content;
-    width: 100%;
+    width: 85%;
     padding-block: 1%;
     display: flex;
     flex-flow: column;
@@ -51,7 +53,7 @@ nav ul{
     border-radius: 5vw;
     list-style-type: none;
     overflow: hidden;
-    width: 80%;
+    width: 75%;
 }
 
 nav li{
@@ -75,15 +77,15 @@ nav a:hover{
 
 /* --------------------------------- GLOBAL CLASSES --------------------------------- */
 .section {
+    background-color: white;
     height: fit-content;
-    width: 80%;
+    width: 85%;
     padding-bottom: 0;
 }
 
-h1, h2, h3{
+h1, h2, h3, p{
     margin: 0;
 }
-
 /* --------------------------------- HOME PAGE --------------------------------- */
 
 #home_landing{
@@ -145,6 +147,10 @@ h1, h2, h3{
     transform: scale(1.1);
 }
 
+#backBtn:active, #nextBtn:active{
+    transform: scale(1);
+}
+
 #bookBtn{
     background-color: #4F6F52;
     border: none;
@@ -153,7 +159,7 @@ h1, h2, h3{
     font: 400 1.5vw 'Roboto', sans-serif;
     margin-block: 3%;
     padding-block: 1vw;
-    padding-inline: 2vw;
+    padding-inline: 3.5vw;
     transition: 100ms;
 }
 
@@ -162,6 +168,10 @@ h1, h2, h3{
         color: #4F6F52;
         cursor: pointer;
         outline: 0.25vw solid #4F6F52;
+    }
+    
+    #bookBtn:active{
+        transform: scale(0.95);
     }
 
 /* --------------------------------- ABOUT SECTION --------------------------------- */
@@ -177,7 +187,7 @@ h1, h2, h3{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: fit-content;   
     padding-block: 5%;
     width: 100%;
 }
@@ -187,29 +197,192 @@ h1, h2, h3{
     font: 400 5vw 'Bebas Neue', sans-serif;
 }
 
-.busCoaches ul{
-    background-color: white;
-    border: 0.25vw solid #4F6F52;
+.busClass{
+    border:0.25vw solid #4F6F52;
     border-radius: 5vw;
-    list-style-type: none;
-    margin-block: 1%;
-    overflow: hidden;
-    padding: 1% 0 1% 0;
-    width: 50%;
+    width: 50vw;
 }
 
-.busCoaches li{
-    display: inline;
-    font: 300 1.5vw 'Roboto';
-    margin-inline: 2%;
-    text-align: center;
-    text-decoration: none;
+.busClass td{
+    font: 400 1.25vw 'Roboto';
+    padding-block: 1%;
+    border-radius: 5vw;
+    width: 50vw;
+    transition: 200ms;
+}
+    .busClass td:hover{
+        background-color: #4F6F52;
+        color: white;
+        cursor: pointer;
+    }
+
+    .busClassNavActive{
+        background-color: #4F6F52;
+        color: white;
+    }
+
+.busClassSection{
+    height: fit-content;
+    display: none;
+}
+
+.showContent{
+    display: block;
+}
+
+.busClassSection h1{
+    font: 300 2vw 'Roboto';
+    animation: busClassSectionH1 1s ease 0s 1 normal forwards;
+}
+
+@keyframes busClassSectionH1 {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.busClassInfo{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 1vw;
+    font: 300 1.25vw 'Roboto';
+}
+
+.busClassInfo td{
+    border: 0.25vw solid #4F6F52;
+    padding: 2%;
+    width: 35%;
+}
+
+.busClassSection img{
+    border-radius: 1vw;
+    margin-left: 5%;
+    height: 27vw;
+    width: 35vw;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+    .busClassSection img:hover{
+        cursor: pointer;
+    }
+
+    @keyframes myAnim {
+        0% {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+.busClassContent{
+    margin-block: 3%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo{
+    height: fit-content;
+    padding: 5%;
+}
+
+.contactInfo h1{
+    font: 400 5vw 'Bebas Neue', sans-serif;
+    color: #4F6F52;
+    margin-block: 1%;
+}
+
+.contactInfo img{
+    width: 85%;
+    border-radius: 1vw;
+}
+
+.contactInfoMapContainer{
+    margin-block: 1%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition-duration: 200ms;
+}
+
+.contactInfoMapContainer img{
+    opacity: 1;
+    display: block;
+    width: 80%;
+    height: auto;
+    backface-visibility: hidden;
+    transition: 200ms;
+}
+
+.contactInfoMapButton{
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.contactInfoMapContainer:hover img {
+    opacity: 0.5;
+  }
+
+.contactInfoMapContainer:hover .contactInfoMapButton {
+    opacity: 1;
+    transition-duration: 200ms;
+}
+
+.contactInfoMapButton button{
+    background-color: #4F6F52;
+    border: none;
+    border-radius: 2vw;
+    color: white;
+    font: 400 1vw 'Roboto', sans-serif;
+    margin-block: 3%;
+    padding-block: 1vw;
+    padding-inline: 3.5vw;
+}
+
+.contactInfoMapButton button:hover{
+    cursor: pointer;
+    transition-duration: 100ms;
+    transform: scale(1.05);
+}
+
+.contactInfoMapButton button:active{
+    transform: scale(1);
+}
+  
+.contactInfo h2, .contactInfo p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.contactInfo h2{
+    margin: 5% 0 2% 0;
+    font-size: 2.5vw;
+}
+
+.contactInfo p{
+    font-size: 1.25vw;
+    margin-block: 1%;
+}
+
+footer{
+    background-color: #4F6F52;
+    width: 100%;
+    height: fit-content;
     padding: 3%;
 }
-
-.busCoaches li:hover{
+footer p{
     color: white;
-    cursor: pointer;
-    background-color: #4F6F52;
+    font: 300 1vw 'Roboto';
 }

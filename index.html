@@ -30,38 +30,105 @@
             <img src="images/icons/backBtn.png" id="backBtn">
             <div class="gallery">
                 <div>
-                    <span><img src="images/backgrounds/home_landing_gallery/1.jpg"></span>
-                    <span><img src="images/backgrounds/home_landing_gallery/2.jpg"></span>
-                    <span><img src="images/backgrounds/home_landing_gallery/3.jpg"></span>
+                    <span><img src="images/home_landing_gallery/1.jpg"></span>
+                    <span><img src="images/home_landing_gallery/2.jpg"></span>
+                    <span><img src="images/home_landing_gallery/3.jpg"></span>
                 </div>
                 <div>
-                    <span><img src="images/backgrounds/home_landing_gallery/7.jpg"></span>
-                    <span><img src="images/backgrounds/home_landing_gallery/2.jpg"></span>
-                    <span><img src="images/backgrounds/home_landing_gallery/8.jpg"></span>
+                    <span><img src="images/home_landing_gallery/7.jpg"></span>
+                    <span><img src="images/home_landing_gallery/2.jpg"></span>
+                    <span><img src="images/home_landing_gallery/8.jpg"></span>
                 </div>
             </div>
             <img src="images/icons/forwardBtn.png" id="nextBtn">
         </div>
         <button id="bookBtn">Book Now</button>
+
         <p id="about">Cagsawa Bus is the safest and cleanest bus company in the Bicol region with hospitable drivers and spacious cabins.<br> <em>“We will bring you to your destination with a smile.”</em></p>
 
-        <div class="busCoaches">
+        <div class="busCoaches" id="busCoaches">
             <h1>Bus Classes</h1>
-            <ul>
-                <li>Royale Class</li>
-                <li>Business Class</li>
-                <li>Elite Class</li>
-            </ul>
+            <table class="busClass">
+                <tr>
+                    <td class="busClassNav busClassNavActive">Royale Class</td>
+                    <td class="busClassNav">Business Class</td>
+                    <td class="busClassNav">Elite Class</td>
+                </tr>
+            </table>
         </div>
-        <div class="busClass"></div>
-        <div class="busClass"></div>
-        <div class="busClass"></div>
+        <div id="busClassContent">
+            <div class="busClassSection showContent" id="busClassRoyale">
+                <h1>Royale Class</h1>
+                <div class="busClassContent">
+                    <table class="busClassInfo">
+                        <tr><td>Seating Configuration</td>  <td style="width: 20vw;">2x2</td></tr>
+                        <tr><td>Seating Capacity</td>       <td>38</td></tr>
+                        <tr><td>Seat Quality</td>           <td>Reclining Seats</td></tr>
+                        <tr><td>Air Conditioned</td>        <td>Yes</td></tr>
+                        <tr><td>Air Suspension</td>         <td>No</td></tr>
+                        <tr><td>Wi-Fi</td>                  <td>No</td></tr>
+                        <tr><td>TV</td> 	                <td>Yes</td></tr>
+                        <tr><td>CCTV</td>                   <td>No</td></tr>
+                        <tr><td>On-board Restroom</td>      <td>No</td></tr>
+                    </table>
+                    <img src="images/royal_class/royal_class_01.jpg">
+                </div>
+            </div>
+            <div class="busClassSection" id="busClassBusiness">
+                <h1>Business Class</h1>
+                <div class="busClassContent">
+                    <table class="busClassInfo">
+                        <tr><td>Seating Configuration</td>  <td style="width: 20vw;">2x1</td></tr>
+                        <tr><td>Seating Capacity</td>       <td>27</td></tr>
+                        <tr><td>Seat Quality</td>           <td>Reclining Seats</td></tr>
+                        <tr><td>Air Conditioned</td>        <td>Yes</td></tr>
+                        <tr><td>Air Suspension</td>         <td>No</td></tr>
+                        <tr><td>Wi-Fi</td>                  <td>Yes</td></tr>
+                        <tr><td>TV</td> 	                <td>Yes</td></tr>
+                        <tr><td>CCTV</td>                   <td>No</td></tr>
+                        <tr><td>On-board Restroom</td>      <td>No</td></tr>
+                    </table>
+                    <img src="images/business_class/413842758_860674916062361_1320638804968272906_n.jpg">
+                </div>
+            </div>
+            <div class="busClassSection" id="busClassElite">
+                <h1>Elite Class</h1>
+                <div class="busClassContent">
+                    <table class="busClassInfo">
+                        <tr><td>Seating Configuration</td>  <td style="width: 20vw;">2x1</td></tr>
+                        <tr><td>Seating Capacity</td>       <td>27</td></tr>
+                        <tr><td>Seat Quality</td>           <td>Lazyboy Leather Seats</td></tr>
+                        <tr><td>Air Conditioned</td>        <td>Yes</td></tr>
+                        <tr><td>Air Suspension</td>         <td>Yes</td></tr>
+                        <tr><td>Wi-Fi</td>                  <td>Yes</td></tr>
+                        <tr><td>TV</td> 	                <td>Yes</td></tr>
+                        <tr><td>CCTV</td>                   <td>Yes</td></tr>
+                        <tr><td>On-board Restroom</td>      <td>Yes</td></tr>
+                    </table>
+                    <img src="images/elite_class/407795687_842046957929454_2420610756848827766_n.jpg">
+                </div>
+            </div>
+        </div>
 
+        <div class="contactInfo">
+            <h1>Contact Us</h1>
+            <div class="contactInfoMapContainer">
+                <img src="images/Web capture_30-12-2023_13519_www.google.com.jpeg" alt="">
+                <div class="contactInfoMapButton">
+                    <button>Open on Google Maps</button>
+                </div>
+            </div>
+            <h2>Cagsawa Bus Terminal Tabaco</h2>
+            <p><strong>Address: </strong>2nd floor Rosita Ang building, Ziga Ave., corner A.A. Berces St. Tabaco City, Tabaco.</p>
+            <p><strong>Contact-numbers: </strong>, +63 0917-3461133, +63 (052)4875318, +63 (052)8301338, +63 (052)9989050, +63 (02) 429-1530</p>
+        </div>
     </section>
+
+    <footer>
+        <p>© 2023 Cagsawa Travel and Tours, Inc.</p>
+        <p><strong>Disclaimer:</strong> This is not the official website of the Operator. This is only a content websites providing information on the Operator.</p>
+    </footer>
     
-    <section id="schedules" class="section">
-
-    </section>
 
     <script src="index.js"></script>
 </body>
