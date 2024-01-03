@@ -1,0 +1,83 @@
+.location-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+.terminalBlock{
+    height: fit-content;
+    width: 80%;
+    display: none;
+    padding-block: 1%;
+    animation: fadeIn 500ms ease 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.showTerminalBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-container p{
+    width: 100%;
+}
+
+.h2-text-style{
+    font: 500 2vw 'Roboto';
+    margin: 1% 0 1% 0;
+}   
+
+.p-text-style{
+    font: 300 1.5vw 'Roboto';
+    width: 90%;
+    margin-block: 1%;
+}
+
+.terminalMap{
+    width: 70%;
+    border-radius: 2vw;
+}
+
+.terminalMap:hover {
+    cursor: pointer;
+    
+}
+
+.terminalNavBar{
+    border: 0.25vw solid #4F6F52;
+    border-radius: 5vw;
+    margin-top: 3%;
+}
+
+.terminalNav{
+    border-radius: 5vw;
+    padding-block: 1%;
+    font: 300 1.15vw 'Roboto', sans-serif;
+    width: 10vw;
+    transition-duration: 200ms;
+}
+
+.terminalNavActive{
+    background-color: #4F6F52;
+    color: white;
+}
+
+.terminalNav:hover{
+    background-color: #4F6F52;
+    color: white;
+    cursor: pointer;
+}

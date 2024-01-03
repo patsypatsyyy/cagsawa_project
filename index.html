@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Josefin+Sans:wght@500;600;700&family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
+    <body>
     <nav>
         <div class="navTitleContainer">
             <h1>CAGSAWA</h1>
             <h2>Travel and Tours, Inc.</h2>
         </div>
         <ul>
-            <a href="#"><li id="showHome">Home</li></a>
-            <a href="#"><li id="showSched">Schedules</li></a>
-            <a href="#"><li id="showTerminals">Terminals</li></a>
-            <a href="#"><li id="showPITX">PITX</li></a>
-            <a href="#"><li id="showBusRental">Bus Rental</li></a>
-            <a href="#"><li id="showFAQ">FAQ</li></a>
+            <a href="index.html" class="activePage"><li>Home</li></a>
+            <a href="schedule.html"><li>Schedules</li></a>
+            <a href="terminals.html"><li>Terminals</li></a>
+            <a href="#"><li>PITX</li></a>
+            <a href="#"><li>Bus Rental</li></a>
+            <a href="#"><li>FAQ</li></a>
         </ul>
     </nav>
 
@@ -30,19 +30,19 @@
             <img src="images/icons/backBtn.png" id="backBtn">
             <div class="gallery">
                 <div>
-                    <span><img src="images/home_landing_gallery/1.jpg"></span>
-                    <span><img src="images/home_landing_gallery/2.jpg"></span>
-                    <span><img src="images/home_landing_gallery/3.jpg"></span>
+                    <span><img src="images/home_page/gallery/1.jpg"></span>
+                    <span><img src="images/home_page/gallery/2.jpg"></span>
+                    <span><img src="images/home_page/gallery/3.jpg"></span>
                 </div>
                 <div>
-                    <span><img src="images/home_landing_gallery/7.jpg"></span>
-                    <span><img src="images/home_landing_gallery/2.jpg"></span>
-                    <span><img src="images/home_landing_gallery/8.jpg"></span>
+                    <span><img src="images/home_page/gallery/7.jpg"></span>
+                    <span><img src="images/home_page/gallery/2.jpg"></span>
+                    <span><img src="images/home_page/gallery/8.jpg"></span>
                 </div>
             </div>
             <img src="images/icons/forwardBtn.png" id="nextBtn">
         </div>
-        <button id="bookBtn">Book Now</button>
+        <a href="https://www.phbus.com/cagsawa-bus/" target="_blank"><button id="bookBtn">Book Now</button></a>
 
         <p id="about">Cagsawa Bus is the safest and cleanest bus company in the Bicol region with hospitable drivers and spacious cabins.<br> <em>“We will bring you to your destination with a smile.”</em></p>
 
@@ -56,8 +56,9 @@
                 </tr>
             </table>
         </div>
+        
         <div id="busClassContent">
-            <div class="busClassSection showContent" id="busClassRoyale">
+            <div class="busClassSection showContent">
                 <h1>Royale Class</h1>
                 <div class="busClassContent">
                     <table class="busClassInfo">
@@ -71,10 +72,10 @@
                         <tr><td>CCTV</td>                   <td>No</td></tr>
                         <tr><td>On-board Restroom</td>      <td>No</td></tr>
                     </table>
-                    <img src="images/royal_class/royal_class_01.jpg">
+                    <img src="images/home_page/class_royal.jpg">
                 </div>
             </div>
-            <div class="busClassSection" id="busClassBusiness">
+            <div class="busClassSection">
                 <h1>Business Class</h1>
                 <div class="busClassContent">
                     <table class="busClassInfo">
@@ -88,10 +89,10 @@
                         <tr><td>CCTV</td>                   <td>No</td></tr>
                         <tr><td>On-board Restroom</td>      <td>No</td></tr>
                     </table>
-                    <img src="images/business_class/413842758_860674916062361_1320638804968272906_n.jpg">
+                    <img src="images/home_page/class_business.jpg">
                 </div>
             </div>
-            <div class="busClassSection" id="busClassElite">
+            <div class="busClassSection">
                 <h1>Elite Class</h1>
                 <div class="busClassContent">
                     <table class="busClassInfo">
@@ -105,7 +106,7 @@
                         <tr><td>CCTV</td>                   <td>Yes</td></tr>
                         <tr><td>On-board Restroom</td>      <td>Yes</td></tr>
                     </table>
-                    <img src="images/elite_class/407795687_842046957929454_2420610756848827766_n.jpg">
+                    <img src="images/home_page/class_elite.jpg">
                 </div>
             </div>
         </div>
@@ -113,14 +114,14 @@
         <div class="contactInfo">
             <h1>Contact Us</h1>
             <div class="contactInfoMapContainer">
-                <img src="images/Web capture_30-12-2023_13519_www.google.com.jpeg" alt="">
+                <img src="images/home_page/contact_us.jpeg">
                 <div class="contactInfoMapButton">
-                    <button>Open on Google Maps</button>
+                    <a href="https://maps.app.goo.gl/VQ98RspvdLMJq5j96"><button>Open on Google Maps</button></a>
                 </div>
             </div>
             <h2>Cagsawa Bus Terminal Tabaco</h2>
             <p><strong>Address: </strong>2nd floor Rosita Ang building, Ziga Ave., corner A.A. Berces St. Tabaco City, Tabaco.</p>
-            <p><strong>Contact-numbers: </strong>, +63 0917-3461133, +63 (052)4875318, +63 (052)8301338, +63 (052)9989050, +63 (02) 429-1530</p>
+            <p><strong>Contact-numbers: </strong>09173461133, +63(052)487-5318, +63(052)830-1338, +63(052)998-9050, +63(02)429-1530</p>
         </div>
     </section>
 

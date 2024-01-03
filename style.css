@@ -1,5 +1,5 @@
 body{
-    background-color: azure;
+    background-color: rgb(241, 255, 240);
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -8,8 +8,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    overflow-x: hidden;
 }
-
 nav{
     background-color: white;
     height: fit-content;
@@ -21,7 +21,6 @@ nav{
     align-items: center;
     
 }
-
 .navTitleContainer{
     height: fit-content;
     width: 35%;
@@ -30,22 +29,19 @@ nav{
     align-items: center;
     justify-content: center;
 }
-
 .navTitleContainer h1, .navTitleContainer h2{
     margin: 0;
 }
-
 .navTitleContainer h1{
-    color: red;
-    font: 400 4vw 'Alfa Slab One', serif;;
+    margin-top: 3%;
+    color: #EF4040;
+    font: 400 4.25vw 'Josefin Sans', sans-serif;
 }
 
 .navTitleContainer h2{
     color: green;
     font: 400 2vw 'Bebas Neue', sans-serif;
-
 }
-
 nav ul{
     padding-block: 1%;
     margin-block: 1%;
@@ -55,11 +51,9 @@ nav ul{
     overflow: hidden;
     width: 75%;
 }
-
 nav li{
     display: inline;
 }
-
 nav a{
     color: white;
     font: 300 1.25vw 'Roboto';
@@ -69,13 +63,17 @@ nav a{
     transition-duration: 200ms;
     padding: 3% 3%;
 }
-
 nav a:hover{
     color: black;
     background-color: white;
 }
+.activePage{
+    background-color: white;
+    color: black;
+}
 
 /* --------------------------------- GLOBAL CLASSES --------------------------------- */
+
 .section {
     background-color: white;
     height: fit-content;
@@ -86,21 +84,14 @@ nav a:hover{
 h1, h2, h3, p{
     margin: 0;
 }
-/* --------------------------------- HOME PAGE --------------------------------- */
 
-#home_landing{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* --------------------------------- HOME PAGE --------------------------------- */
 
 .gallery{
     width: 100%;
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 .gallery div {
@@ -132,7 +123,6 @@ h1, h2, h3, p{
 }
 
 .gallery div img:hover{
-    cursor: pointer;
     transform: scale(1.05);
 }
 
@@ -161,6 +151,19 @@ h1, h2, h3, p{
     padding-block: 1vw;
     padding-inline: 3.5vw;
     transition: 100ms;
+    animation: bookBtnAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes bookBtnAnim {
+    0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
     #bookBtn:hover{
@@ -195,6 +198,7 @@ h1, h2, h3, p{
 .busCoaches h1{
     color: #4F6F52;
     font: 400 5vw 'Bebas Neue', sans-serif;
+    margin-block: 1%;
 }
 
 .busClass{
@@ -204,7 +208,7 @@ h1, h2, h3, p{
 }
 
 .busClass td{
-    font: 400 1.25vw 'Roboto';
+    font: 300 1.25vw 'Roboto';
     padding-block: 1%;
     border-radius: 5vw;
     width: 50vw;
@@ -246,6 +250,7 @@ h1, h2, h3, p{
 }
 
 .busClassInfo{
+    margin-inline: 2.5%;
     border: 1px solid black;
     border-collapse: collapse;
     border-radius: 1vw;
@@ -260,15 +265,11 @@ h1, h2, h3, p{
 
 .busClassSection img{
     border-radius: 1vw;
-    margin-left: 5%;
+    margin-inline: 2.5%;
     height: 27vw;
     width: 35vw;
     animation: myAnim 1s ease 0s 1 normal forwards;
 }
-
-    .busClassSection img:hover{
-        cursor: pointer;
-    }
 
     @keyframes myAnim {
         0% {
@@ -381,6 +382,7 @@ footer{
     width: 100%;
     height: fit-content;
     padding: 3%;
+
 }
 footer p{
     color: white;
