@@ -81,3 +81,44 @@
     color: white;
     cursor: pointer;
 }
+
+button{
+    cursor: pointer;
+}
+
+.locationBtnDiv{
+    background-color: lime;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+
+.terminalMapImage{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+.locationSubDiv{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 200ms;
+}
+
+.locationSubDiv:hover .terminalMapImage{
+    opacity: 50%;
+
+}
+
+.locationSubDiv:hover .locationBtnDiv{
+    opacity: 100%;
+}
