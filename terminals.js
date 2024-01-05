@@ -1,9 +1,17 @@
 let tabacoTerminal = {
     locationName: "CAGSAWA Bus Terminal Tabaco",
     address: "Main Office 2F Rosita Ang Bldg. A.A. Berces St., Ziga Avenue, Tabaco City",
-    contactNum: "+63(052)487-5318, +63(052)830-1338, +63(052)998-9050, +63(02)429-1530",
+    contactNum: "0917-346-1133",
     imageSource: "images/terminal_page/terminal_tabaco.png",
     googleMapLink: "https://www.google.com/maps/place/Cagsawa+Bus+Lines/@13.357787,123.729723,16z/data=!4m6!3m5!1s0x33a1adb8093470f5:0x6aed8a4442925069!8m2!3d13.3577871!4d123.729723!16s%2Fg%2F1v44bhd1?hl=en&entry=ttu"
+}
+
+let legazpiTerminal = {
+    locationName: "CAGSAWA Bus Terminal Legazpi",
+    address: "Legazpi Bus Terminal Bitano Tahao Rd., Legazpi City",
+    contactNum: "0932-880-9633",
+    imageSource: "images/terminal_page/terminal_legazpi.png",
+    googleMapLink: "https://www.google.com/maps/place/Cagsawa+Travel+And+Tours,+Inc./@13.143419,123.74547,16z/data=!4m6!3m5!1s0x33a103d665326d25:0xb0e7fae30f0f6d42!8m2!3d13.1434188!4d123.74547!16s%2Fg%2F11dx9dzjf_?ll=13.143419,123.74547&z=16&t=m&hl=en&gl=BD&mapclient=embed&cid=12747433123412667714&entry=tts&shorturl=1"
 }
 
 let quezonTerminal = {
@@ -30,13 +38,6 @@ let ermitaTerminal = {
     googleMapLink: "https://www.google.com/maps/place/Cagsawa+Travel+And+Tours/@14.576932,120.980718,16z/data=!4m6!3m5!1s0x3397ca2ed93ec8d9:0x5b1ca8cbc7724083!8m2!3d14.5769324!4d120.9807178!16s%2Fg%2F1tgw_kbt?ll=14.576932,120.980718&z=16&t=m&hl=en&gl=BD&mapclient=embed&cid=6565307949977321603&entry=tts&shorturl=1"
 }
 
-let legazpiTerminal = {
-    locationName: "CAGSAWA Bus Terminal Legazpi",
-    address: "Legazpi Bus Terminal Bitano Tahao Rd., Legazpi City",
-    contactNum: "0932-880-9633",
-    imageSource: "images/terminal_page/terminal_legazpi.png",
-    googleMapLink: "https://www.google.com/maps/place/Cagsawa+Travel+And+Tours,+Inc./@13.143419,123.74547,16z/data=!4m6!3m5!1s0x33a103d665326d25:0xb0e7fae30f0f6d42!8m2!3d13.1434188!4d123.74547!16s%2Fg%2F11dx9dzjf_?ll=13.143419,123.74547&z=16&t=m&hl=en&gl=BD&mapclient=embed&cid=12747433123412667714&entry=tts&shorturl=1"
-}
 
 const terminals = [tabacoTerminal, legazpiTerminal, quezonTerminal, cubaoTerminal, ermitaTerminal];
 
@@ -68,10 +69,10 @@ for(i = 0; i < terminals.length; i++){
     locationAddress.style.marginTop = "3%";
 
 
-    // INSERTED FUNCTION //
-    let btnTxt = document.createTextNode("Open Link");
+    let btnTxt = document.createTextNode("Open in Google Maps");
     locationButtonE.appendChild(btnTxt);
     locationLinkE.href = terminals[i].googleMapLink;
+    locationLinkE.target = "_blank";
 
     locationImageE.className = "terminalMapImage";
     locationImageE.src = terminals[i].imageSource;
@@ -90,7 +91,7 @@ for(i = 0; i < terminals.length; i++){
         
         document.getElementsByClassName("locationSubDiv")[i].append(locationImageE);
         document.getElementsByClassName("locationSubDiv")[i].append(locationBtnDiv);
-        document.getElementsByClassName("locationBtnDiv")[i].appendChild(locationLinkE);
+        document.getElementsByClassName("locationBtnDiv")[i].append(locationLinkE);
         document.getElementsByClassName("googleMapsLink")[i].append(locationButtonE);
     }
 

@@ -16,13 +16,8 @@
 }
 
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .showTerminalBlock{
@@ -54,13 +49,12 @@
 
 .terminalMap:hover {
     cursor: pointer;
-    
 }
 
 .terminalNavBar{
     border: 0.25vw solid #4F6F52;
     border-radius: 5vw;
-    margin-top: 3%;
+    margin-top: 10%;
 }
 
 .terminalNav{
@@ -70,26 +64,34 @@
     width: 10vw;
     transition-duration: 200ms;
 }
-
 .terminalNavActive{
     background-color: #4F6F52;
     color: white;
 }
-
 .terminalNav:hover{
     background-color: #4F6F52;
     color: white;
     cursor: pointer;
 }
-
-button{
-    cursor: pointer;
+.locationBtnDiv button{
+    background-color: #4F6F52;
+    border: none;
+    border-radius: 2vw;
+    color: white;
+    font: 400 1vw 'Roboto', sans-serif;
+    margin-block: 3%;
+    padding-block: 1vw;
+    padding-inline: 3.5vw;
+    width: fit-content;
+    transition-duration: 100ms;
 }
-
+.locationBtnDiv button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
 .locationBtnDiv{
-    background-color: lime;
-    height: 50px;
-    width: 50px;
+    height: inherit;
+    width: inherit;
     position: absolute;
     display: flex;
     align-items: center;
@@ -97,15 +99,16 @@ button{
     opacity: 0;
     transition-duration: 200ms;
 }
-
 .terminalMapImage{
+    border-radius: 2vw;
     height: 100%;
     width: 100%;
     position: relative;
 }
-
-
 .locationSubDiv{
+    position: relative;
+    background-color: gray;
+    border-radius: 2vw;
     height: 70%;
     width: 70%;
     display: flex;
@@ -113,12 +116,9 @@ button{
     justify-content: center;
     transition-duration: 200ms;
 }
-
 .locationSubDiv:hover .terminalMapImage{
     opacity: 50%;
-
 }
-
 .locationSubDiv:hover .locationBtnDiv{
     opacity: 100%;
 }

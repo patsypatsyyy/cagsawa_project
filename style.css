@@ -10,6 +10,11 @@ body{
     flex-flow: column;
     overflow-x: hidden;
 }
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
 nav{
     background-color: white;
     height: fit-content;
@@ -191,14 +196,13 @@ h1, h2, h3, p{
     display: flex;
     flex-direction: column;
     height: fit-content;   
-    padding-block: 5%;
+    margin: 5% 0 3% 0;
     width: 100%;
 }
 
 .busCoaches h1{
     color: #4F6F52;
     font: 400 5vw 'Bebas Neue', sans-serif;
-    margin-block: 1%;
 }
 
 .busClass{
