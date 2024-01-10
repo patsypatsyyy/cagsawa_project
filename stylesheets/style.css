@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(241, 255, 240);
+    background-color: #f1fff0;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -11,9 +11,52 @@ body{
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar{
-    display: none;
+/* --------------------------------- GLOBAL CLASSES --------------------------------- */
+
+.section {
+    background-color: white;
+    height: fit-content;
+    width: 85%;
+    padding-bottom: 0;
 }
+
+.sectionPart{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1, h2, h3, p, pre{
+    margin: 0;
+}
+
+h1{    
+    color: #4F6F52;
+    font: 400 5vw 'Bebas Neue', sans-serif;
+}
+
+h2{
+    font: 400 2vw 'Roboto';  
+}
+
+p, pre{
+    font: 300 1.25vw 'Roboto';
+}
+
+a{
+    color: #4F6F52;
+    text-decoration: none;
+    transition-duration: 500ms;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* --------------------------------- NAVIGATION BAR --------------------------------- */
 
 nav{
     background-color: white;
@@ -26,6 +69,7 @@ nav{
     align-items: center;
     
 }
+
 .navTitleContainer{
     height: fit-content;
     width: 35%;
@@ -34,9 +78,11 @@ nav{
     align-items: center;
     justify-content: center;
 }
+
 .navTitleContainer h1, .navTitleContainer h2{
     margin: 0;
 }
+
 .navTitleContainer h1{
     margin-top: 3%;
     color: #EF4040;
@@ -71,24 +117,13 @@ nav a{
 nav a:hover{
     color: black;
     background-color: white;
+    text-decoration: none;
 }
 .activePage{
     background-color: white;
     color: black;
 }
 
-/* --------------------------------- GLOBAL CLASSES --------------------------------- */
-
-.section {
-    background-color: white;
-    height: fit-content;
-    width: 85%;
-    padding-bottom: 0;
-}
-
-h1, h2, h3, p{
-    margin: 0;
-}
 
 /* --------------------------------- HOME PAGE --------------------------------- */
 
@@ -182,12 +217,6 @@ h1, h2, h3, p{
         transform: scale(0.95);
     }
 
-/* --------------------------------- ABOUT SECTION --------------------------------- */
-
-#about{
-    font: 300 1.25vw 'Roboto';
-    margin: 0;
-}
 
 /* --------------------------------- BUS COACHES SECTION --------------------------------- */
 
@@ -198,11 +227,6 @@ h1, h2, h3, p{
     height: fit-content;   
     margin: 5% 0 3% 0;
     width: 100%;
-}
-
-.busCoaches h1{
-    color: #4F6F52;
-    font: 400 5vw 'Bebas Neue', sans-serif;
 }
 
 .busClass{
@@ -238,12 +262,12 @@ h1, h2, h3, p{
     display: block;
 }
 
-.busClassSection h1{
-    font: 300 2vw 'Roboto';
-    animation: busClassSectionH1 1s ease 0s 1 normal forwards;
+.busClassSection h2{
+
+    animation: fadeIn 1s ease 0s 1 normal forwards;
 }
 
-@keyframes busClassSectionH1 {
+@keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
@@ -295,15 +319,11 @@ h1, h2, h3, p{
     align-items: center;
 }
 
+/* --------------------------------- CONTACT US --------------------------------- */
+
 .contactInfo{
     height: fit-content;
     padding: 5%;
-}
-
-.contactInfo h1{
-    font: 400 5vw 'Bebas Neue', sans-serif;
-    color: #4F6F52;
-    margin-block: 1%;
 }
 
 .contactInfo img{
@@ -338,7 +358,7 @@ h1, h2, h3, p{
 
 .contactInfoMapContainer:hover img {
     opacity: 0.5;
-  }
+}
 
 .contactInfoMapContainer:hover .contactInfoMapButton {
     opacity: 1;
@@ -372,7 +392,7 @@ h1, h2, h3, p{
 }
 
 .contactInfo h2{
-    margin: 5% 0 2% 0;
+    margin: 2% 0 1% 0;
     font-size: 2.5vw;
 }
 

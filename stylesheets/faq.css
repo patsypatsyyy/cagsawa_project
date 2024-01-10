@@ -1,0 +1,59 @@
+.section{
+    width: 85%;
+    padding: 0 0 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.faqCardHolder{
+    position: relative;
+    width: 80%;
+    text-align: left;
+    padding: 0;
+}
+
+.faqCardHolder .faqCard{
+    list-style: none;
+    width: 100%;
+    font: 300 1.25vw "Roboto", sans-serif;
+}
+
+.faqCardHolder .faqCard label{
+    border: 0.25vw solid #4F6F52;
+    border-radius: 2vw;
+    background-color: #f1fff0;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.faqCardHolder label::before{
+    content: "+";
+    margin: 0 2% 0 1%;
+    font-weight: 700;
+}
+
+.faqCardHolder input[type="radio"]{
+    display: none;
+}
+
+.faqCardHolder .answer{
+    margin: 0.5%;
+    padding-inline: 3%;
+    height: 0;
+    overflow: hidden;
+    transition: 200ms;
+}
+
+.faqCardHolder input[type="radio"]:checked + label + .answer{
+    height: fit-content;
+    padding-block: 20px;
+}
+
+.faqCardHolder input[type="radio"]:checked + label::before{
+    content: "-";
+}

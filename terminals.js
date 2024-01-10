@@ -1,5 +1,5 @@
 let tabacoTerminal = {
-    locationName: "CAGSAWA Bus Terminal Tabaco",
+    locationName: "Tabaco Terminal",
     address: "Main Office 2F Rosita Ang Bldg. A.A. Berces St., Ziga Avenue, Tabaco City",
     contactNum: "0917-346-1133",
     imageSource: "images/terminal_page/terminal_tabaco.png",
@@ -7,7 +7,7 @@ let tabacoTerminal = {
 }
 
 let legazpiTerminal = {
-    locationName: "CAGSAWA Bus Terminal Legazpi",
+    locationName: "Legazpi Terminal",
     address: "Legazpi Bus Terminal Bitano Tahao Rd., Legazpi City",
     contactNum: "0932-880-9633",
     imageSource: "images/terminal_page/terminal_legazpi.png",
@@ -15,7 +15,7 @@ let legazpiTerminal = {
 }
 
 let quezonTerminal = {
-    locationName: "CAGSAWA Bus Terminal Quezon",
+    locationName: "Quezon Terminal",
     address: "General Romulo Avenue, Araneta Center, Quezon City",
     contactNum: "0917-346-1133",
     imageSource: "images/terminal_page/terminal_quezon.png",
@@ -23,7 +23,7 @@ let quezonTerminal = {
 }
 
 let cubaoTerminal = {
-    locationName: "CAGSAWA Bus Terminal Cubao",
+    locationName: "Cubao Terminal",
     address: "Araneta Center Bus Station, Times Square Ave, Cubao, Quezon City, 1109 Metro Manila",
     contactNum: "+63(02)8913-1514",
     imageSource: "images/terminal_page/terminal_cubao.png",
@@ -31,7 +31,7 @@ let cubaoTerminal = {
 }
 
 let ermitaTerminal = {
-    locationName: "CAGSAWA Bus Terminal Ermita",
+    locationName: "Ermita Terminal",
     address: "472 Padre Faura St, Ermita, Manila, 1000 Metro Manila",
     contactNum: "+63(02)525-9756, 0906-448-0110, 0925-617-2005",
     imageSource: "images/terminal_page/terminal_ermita.png",
@@ -59,14 +59,9 @@ for(i = 0; i < terminals.length; i++){
         locationDiv.className = "terminalBlock";
     } 
 
-    locationTitle.className = "h2-text-style";
-    locationContactNumbers.className = "p-text-style";
-    locationAddress.className = "p-text-style";
-
-    locationTitle.textContent = terminals[i].locationName;
-    locationContactNumbers.innerHTML = `<strong>Contact Number(s):</strong> ${terminals[i].contactNum}`;
-    locationAddress.innerHTML = `<strong>Address:</strong> ${terminals[i].address}`;
-    locationAddress.style.marginTop = "3%";
+    locationTitle.textContent = terminals[i].locationName.toUpperCase();
+    locationContactNumbers.innerHTML = `${terminals[i].contactNum}`;
+    locationAddress.innerHTML = `${terminals[i].address}`;
 
 
     let btnTxt = document.createTextNode("Open in Google Maps");
@@ -84,8 +79,8 @@ for(i = 0; i < terminals.length; i++){
     
     document.querySelector(".location-container").append(locationDiv);
     document.getElementsByClassName("terminalBlock")[i].append(
-        locationTitle, 
         locationSubDiv,
+        locationTitle, 
         locationAddress, 
         locationContactNumbers);
         
@@ -113,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
             this.className += " terminalNavActive";
             current.className += " showTerminalBlock"
-            
         });
     }
 });  

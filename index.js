@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function(){
     scrollContainer.addEventListener("wheel", (evt) => {
         evt.preventDefault();
         scrollContainer.scrollLeft += evt.deltaY;
-    
     })
     
     nextBtn.addEventListener("click", ()=>{

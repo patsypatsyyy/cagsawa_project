@@ -1,0 +1,133 @@
+.section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pitx-description{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.pitx-description p{
+    line-height: 140%;
+    width: 90%;
+}
+
+.pitx-description a{
+    color: #4F6F52;
+}
+
+.pitx-gallery{
+    height: fit-content;
+    width: 90%;
+    overflow: scroll;
+    overflow-y: hidden;
+    display: flex;
+    margin: 0 0 5% 0;
+    scroll-behavior: smooth;
+}
+
+.pitx-gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.pitx-gallery img{
+    height: 20vw;
+    width: 35%;
+    padding-inline: 1%;
+    display: inline-flex;
+    border-radius: 2vw;
+}
+
+.pitx-location{
+    margin: 0 0 5% 0;
+    height: fit-content;
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pitx-location p{
+    margin-block: 0.5%;
+}
+
+.pitx-location-map{
+    background-color: gray;
+    border-radius: 2vw;
+    margin: 0 0 3% 0;
+    width: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 200ms;
+}
+
+.pitx-location-map img{
+    position: relative;
+    border-radius: 2vw;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: 200ms;
+}
+
+.pitx-location-map:hover img{
+    opacity: 0.5;
+}
+
+.pitx-location-map:hover .pitx-location-btn{
+    opacity: 1;
+    transition-duration: 200ms;
+}
+
+.pitx-location-btn{
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.pitx-location-btn button{
+    background-color: #4F6F52;
+    border: none;
+    border-radius: 2vw;
+    color: white;
+    font: 400 1vw 'Roboto', sans-serif;
+    margin-block: 3%;
+    padding-block: 1vw;
+    padding-inline: 3.5vw;
+}
+
+.pitx-location-btn button:hover{
+    cursor: pointer;
+    transition-duration: 100ms;
+    transform: scale(1.05);
+}
+
+.table-style{
+    border: 0.25vw solid #4F6F52;
+    border-collapse: collapse;
+    text-align: center;
+    width: 85%;
+    margin: 1% 0 5% 0;
+}
+
+.table-style th{
+    font: 400 1.5vw 'Roboto', sans-serif;
+    border: 0.25vw solid #4F6F52;
+}
+
+.table-style td{
+    font: 300 1.25vw 'Roboto', sans-serif;
+    border: 0.25vw solid #4F6F52;
+    padding: 1%;
+}

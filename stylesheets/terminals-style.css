@@ -1,10 +1,16 @@
+.sectionPart p{
+    width: 80%;
+    margin-block: 1%;
+}
+
 .location-container{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 3%;
+    padding: 1% 0 1% 0;
+    margin: 0 0 5% 0;
 }
 
 .terminalBlock{
@@ -13,6 +19,10 @@
     display: none;
     padding-block: 1%;
     animation: fadeIn 500ms ease 0s 1 normal forwards;
+}
+
+.terminalBlock p{
+    margin: 0.5%;
 }
 
 @keyframes fadeIn {
@@ -27,20 +37,10 @@
     flex-direction: column;
 }
 
-.location-container p{
-    width: 100%;
+.sectionPart h2{
+    margin: 2% 0 1% 0;
 }
 
-.h2-text-style{
-    font: 500 2vw 'Roboto';
-    margin: 1% 0 1% 0;
-}   
-
-.p-text-style{
-    font: 300 1.5vw 'Roboto';
-    width: 90%;
-    margin-block: 1%;
-}
 
 .terminalMap{
     width: 70%;
@@ -54,7 +54,7 @@
 .terminalNavBar{
     border: 0.25vw solid #4F6F52;
     border-radius: 5vw;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .terminalNav{
@@ -64,15 +64,18 @@
     width: 10vw;
     transition-duration: 200ms;
 }
+
 .terminalNavActive{
     background-color: #4F6F52;
     color: white;
 }
+
 .terminalNav:hover{
     background-color: #4F6F52;
     color: white;
     cursor: pointer;
 }
+
 .locationBtnDiv button{
     background-color: #4F6F52;
     border: none;
@@ -85,10 +88,12 @@
     width: fit-content;
     transition-duration: 100ms;
 }
+
 .locationBtnDiv button:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
+
 .locationBtnDiv{
     height: inherit;
     width: inherit;
@@ -99,26 +104,30 @@
     opacity: 0;
     transition-duration: 200ms;
 }
+
 .terminalMapImage{
     border-radius: 2vw;
     height: 100%;
     width: 100%;
     position: relative;
 }
+
 .locationSubDiv{
     position: relative;
     background-color: gray;
     border-radius: 2vw;
     height: 70%;
-    width: 70%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: 200ms;
 }
+
 .locationSubDiv:hover .terminalMapImage{
     opacity: 50%;
 }
+
 .locationSubDiv:hover .locationBtnDiv{
     opacity: 100%;
 }

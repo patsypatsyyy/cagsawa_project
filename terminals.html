@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cagsawa Travel and Tours Incorporated</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="schedule-style.css">
-    <link rel="stylesheet" href="terminals-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Josefin+Sans:wght@500;600;700&family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav>
-        <div class="navTitleContainer">
-            <h1>CAGSAWA</h1>
-            <h2>Travel and Tours, Inc.</h2>
-        </div>
-        <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="schedule.html"><li>Schedules</li></a>
-            <a href="terminals.html" class="activePage"><li>Terminals</li></a>
-            <a href="pitx.html"><li>PITX</li></a>
-            <a href="#"><li>Bus Rental</li></a>
-            <a href="#"><li>FAQ</li></a>
-        </ul>
-    </nav>
-
-    <section id="terminals" class="section">
-        <div class="sectionPart">
-            <h1 class="h1-text-style">CAGSAWA BUS TERMINALS</h1>
-            <p class="p-text-style"><strong>ATTENTION:</strong>  TRIP SCHEDULE MAY CHANGE WITHOUT PRIOR NOTICE. PLEASE VISIT <a href="https://www.phbus.com/cagsawa-bus/" class="a-text-style">PHBUS.COM</a>, TERMINAL, OR <a href="https://www.facebook.com/cagsawatours.ph" class="a-text-style">FACEBOOK PAGE</a> FOR MORE DETAILS.</p>
-            
-            <div id="terminalNavBar">
-                <table class="terminalNavBar">
-                    <tr>
-                        <td class="terminalNav terminalNavActive">Tabaco</td>
-                        <td class="terminalNav">Legazpi</td>
-                        <td class="terminalNav">Quezon</td>
-                        <td class="terminalNav">Cubao</td>
-                        <td class="terminalNav">Ermita</td>
-                    </tr>
-                </table>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cagsawa Travel and Tours Incorporated</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/terminals-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Josefin+Sans:wght@500;600;700&family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="navTitleContainer">
+                <h1>CAGSAWA</h1>
+                <h2>Travel and Tours, Inc.</h2>
             </div>
-            
-            <div class="location-container" id="location-container"></div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2023 Cagsawa Travel and Tours, Inc.</p>
-        <p><strong>Disclaimer:</strong> This is not the official website of the Operator. This is only a content websites providing information on the Operator.</p>
-    </footer>
-
-    <script src="terminals.js"></script>
-</body>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="schedule.html">
+                    <li>Schedules</li>
+                </a>
+                <a href="terminals.html" class="activePage">
+                    <li>Terminals</li>
+                </a>
+                <a href="pitx.html">
+                    <li>PITX</li>
+                </a>
+                <a href="https://busrentalmanila.com/?ref=cagsawabus.com">
+                    <li>Bus Rental</li>
+                </a>
+                <a href="faq.html">
+                    <li>FAQ</li>
+                </a>
+            </ul>
+        </nav>
+        <section id="terminals" class="section">
+            <div class="sectionPart">
+                <h1>CAGSAWA BUS TERMINALS</h1>
+                <p><strong>ATTENTION:</strong> TRIP SCHEDULE MAY CHANGE WITHOUT PRIOR NOTICE. PLEASE VISIT <a href="https://www.phbus.com/cagsawa-bus/" class="a-text-style">PHBUS.COM</a>, TERMINAL, OR <a href="https://www.facebook.com/cagsawatours.ph" class="a-text-style">FACEBOOK PAGE</a> FOR MORE DETAILS.</p>
+                <div id="terminalNavBar">
+                    <table class="terminalNavBar">
+                        <tr>
+                            <td class="terminalNav terminalNavActive">Tabaco</td>
+                            <td class="terminalNav">Legazpi</td>
+                            <td class="terminalNav">Quezon</td>
+                            <td class="terminalNav">Cubao</td>
+                            <td class="terminalNav">Ermita</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="location-container" id="location-container"></div>
+            </div>
+        </section>
+        <footer>
+            <p>© 2023 Cagsawa Travel and Tours, Inc.</p>
+            <p><strong>Disclaimer:</strong> This is not the official website of the Operator. This is only a content websites providing information on the Operator.</p>
+        </footer>
+        <script src="terminals.js"></script>
+    </body>
 </html>

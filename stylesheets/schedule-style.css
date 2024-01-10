@@ -1,0 +1,27 @@
+.sectionPart p{
+    width: 80%;
+    margin-block: 1%;
+}
+
+.sectionPart h2{
+    margin: 3% 0 1% 0;
+}
+
+.table-style{
+    border: 0.25vw solid #4F6F52;
+    border-collapse: collapse;
+    text-align: center;
+    width: 85%;
+    margin: 0 0 5% 0;
+}
+
+.table-style th{
+    font: 400 1.5vw 'Roboto', sans-serif;
+    border: 0.25vw solid #4F6F52;
+}
+
+.table-style td{
+    font: 300 1.25vw 'Roboto', sans-serif;
+    border: 0.25vw solid #4F6F52;
+    padding: 1%;
+}
