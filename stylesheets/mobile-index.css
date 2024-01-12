@@ -1,0 +1,98 @@
+@media only screen and (max-width: 426px) {
+    .section{
+        width: 100vw;
+    }
+
+    .homeGallery{
+        margin: 0 0 7.5vw 0;
+    }
+
+    .homeGallery div{
+        width: 100%;
+    }
+
+    .homeGallery div img{
+        height: 70vw;
+        width: 85vw;
+        margin-inline: 1.5vw;
+    }
+
+    .galleryBtn{
+        display: none;
+    }
+
+    #bookBtn{
+        font-size: 3.5vw;
+        padding-block: 3vw;
+        padding-inline: 38vw;
+        border-radius: 2vw;
+    }
+
+    #about{
+        font-size: 4vw;
+        width: 90%;
+        margin-block: 7vw;
+    }
+
+    /* ##################################################### */
+    
+    .busClass{
+        width: 90%;
+        border: 0.5vw solid #4F6F52;
+    }
+
+    .busClass td{
+        font-size: 4vw;
+    }
+
+    .busClassContent{
+        flex-direction: column-reverse;
+    }
+    
+    .busClassContent img{
+        height: 60vw;
+        width: 70vw;
+        border-radius: 5vw;
+        margin: 0 0 10% 0;
+        animation: fadeBottom 1s ease 0s 1 normal forwards;
+    }
+
+    @keyframes fadeBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(3vw);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .busClassSection h2{
+        font-size: 5vw;
+        margin: 0 0 5% 0;
+    }
+
+    .busClassInfo{
+        border: 0.5vw solid #4F6F52;
+        margin: 0 0 5% 0;
+    }
+
+    .busClassInfo td{
+        font-size: 3vw;
+        border: 0.5vw solid #4F6F52;
+    }
+
+    /* ##################################################### */
+
+    .contactInfoMapContainer img{
+        width: 90vw;
+    }
+
+    .contactInfoMapButton button{
+        font-size: 3vw;
+        padding: 5% 10vw 5% 10vw;
+        border-radius: 5vw;
+    }
+}

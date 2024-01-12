@@ -1,0 +1,47 @@
+@media only screen and (max-width: 426px) {
+    h1{    
+        color: #4F6F52;
+        font: 400 12vw 'Bebas Neue', sans-serif;
+    }
+    
+    h2{
+        font: 400 5vw 'Roboto';  
+    }
+    
+    p, pre{
+        font: 300 3vw 'Roboto';
+        width: 80%;
+    }
+    
+    /* ##################################################### */
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav ul{
+        display: none;
+    }
+    
+    .navTitleContainer{
+        margin-block: 5%;
+    }
+    
+    .navTitleContainer h1{
+        font-size: 11vw;
+    }
+    
+    .navTitleContainer h2{
+        font-size: 4vw;
+    }
+    
+    /* ##################################################### */
+    
+    footer{
+        padding: 5%;
+    }
+
+    footer p{
+        font-size: 2vw;
+    }
+}

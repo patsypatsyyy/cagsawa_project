@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     // Gallery Container
-    let scrollContainer = document.querySelector(".gallery");
+    let scrollContainer = document.querySelector(".homeGallery div");
     let backBtn = document.getElementById("backBtn");
     let nextBtn = document.getElementById("nextBtn");
     

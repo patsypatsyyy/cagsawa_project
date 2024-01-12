@@ -46,7 +46,7 @@
     padding-inline: 3%;
     height: 0;
     overflow: hidden;
-    transition: 200ms;
+    transition: 300ms;
 }
 
 .faqCardHolder input[type="radio"]:checked + label + .answer{

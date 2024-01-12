@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cagsawa Travel and Tours Incorporated</title>
         <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/index.css">
+        <link rel="stylesheet" href="stylesheets/mobile-index.css">
+        <link rel="stylesheet" href="stylesheets/mobile-style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Josefin+Sans:wght@500;600;700&family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -36,32 +39,31 @@
                 </a>
             </ul>
         </nav>
-        <section id="home" class="section">
-            <div class="gallery-wrap">
-                <img src="images/icons/backBtn.png" id="backBtn">
-                <div class="gallery">
-                    <div>
-                        <span><img src="images/home_page/gallery/1.jpg"></span>
-                        <span><img src="images/home_page/gallery/2.jpg"></span>
-                        <span><img src="images/home_page/gallery/3.jpg"></span>
-                    </div>
-                    <div>
-                        <span><img src="images/home_page/gallery/7.jpg"></span>
-                        <span><img src="images/home_page/gallery/2.jpg"></span>
-                        <span><img src="images/home_page/gallery/8.jpg"></span>
-                    </div>
+
+        <section class="section">
+            <div class="homeGallery">
+                <img class="galleryBtn" id="backBtn" src="images/icons/backBtn.png" alt="Back Button">
+                <div>
+                    <img src="images/home_page/gallery/1.jpg" alt="galleryImage01">
+                    <img src="images/home_page/gallery/2.jpg" alt="galleryImage02">
+                    <img src="images/home_page/gallery/3.jpg" alt="galleryImage03">
+                    <img src="images/home_page/gallery/4.jpg" alt="galleryImage04">
+                    <img src="images/home_page/gallery/5.jpg" alt="galleryImage05">
+                    <img src="images/home_page/gallery/6.webp" alt="galleryImage06">
                 </div>
-                <img src="images/icons/forwardBtn.png" id="nextBtn">
+                <img class="galleryBtn" id="nextBtn" src="images/icons/forwardBtn.png" alt="Back Button">
             </div>
+
             <a href="https://www.phbus.com/cagsawa-bus/" target="_blank"><button id="bookBtn">Book Now</button></a>
+
             <p id="about">Cagsawa Bus is the safest and cleanest bus company in the Bicol region with hospitable drivers and spacious cabins.<br> <em>“We will bring you to your destination with a smile.”</em></p>
             <div class="busCoaches" id="busCoaches">
                 <h1>Bus Classes</h1>
                 <table class="busClass">
                     <tr>
-                        <td class="busClassNav busClassNavActive">Royale Class</td>
-                        <td class="busClassNav">Business Class</td>
-                        <td class="busClassNav">Elite Class</td>
+                        <td class="busClassNav busClassNavActive">Royale</td>
+                        <td class="busClassNav">Business</td>
+                        <td class="busClassNav">Elite</td>
                     </tr>
                 </table>
             </div>
@@ -72,7 +74,7 @@
                         <table class="busClassInfo">
                             <tr>
                                 <td>Seating Configuration</td>
-                                <td style="width: 20vw;">2x2</td>
+                                <td style="width: 25vw;">2x2</td>
                             </tr>
                             <tr>
                                 <td>Seating Capacity</td>
@@ -116,7 +118,7 @@
                         <table class="busClassInfo">
                             <tr>
                                 <td>Seating Configuration</td>
-                                <td style="width: 20vw;">2x1</td>
+                                <td style="width: 25vw;">2x1</td>
                             </tr>
                             <tr>
                                 <td>Seating Capacity</td>
@@ -160,7 +162,7 @@
                         <table class="busClassInfo">
                             <tr>
                                 <td>Seating Configuration</td>
-                                <td style="width: 20vw;">2x1</td>
+                                <td style="width: 25vw;">2x1</td>
                             </tr>
                             <tr>
                                 <td>Seating Capacity</td>
@@ -212,10 +214,11 @@
                 <p>0917-346-1133</p>
             </div>
         </section>
+        
         <footer>
             <p>© 2023 Cagsawa Travel and Tours, Inc.</p>
             <p><strong>Disclaimer:</strong> This is not the official website of the Operator. This is only a content websites providing information on the Operator.</p>
         </footer>
-        <script src="index.js"></script>
+        <script src="scripts/index.js"></script>
     </body>
 </html>
