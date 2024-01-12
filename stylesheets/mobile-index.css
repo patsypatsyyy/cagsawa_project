@@ -50,8 +50,8 @@
     }
     
     .busClassContent img{
-        height: 60vw;
-        width: 70vw;
+        height: 70vw;
+        width: 85vw;
         border-radius: 5vw;
         margin: 0 0 10% 0;
         animation: fadeBottom 1s ease 0s 1 normal forwards;
@@ -80,18 +80,22 @@
     }
 
     .busClassInfo td{
-        font-size: 3vw;
+        font-size: 4vw;
         border: 0.5vw solid #4F6F52;
     }
 
     /* ##################################################### */
+
+    .contactInfo{
+        width: 90%;
+    }
 
     .contactInfoMapContainer img{
         width: 90vw;
     }
 
     .contactInfoMapButton button{
-        font-size: 3vw;
+        font-size: 4vw;
         padding: 5% 10vw 5% 10vw;
         border-radius: 5vw;
     }
