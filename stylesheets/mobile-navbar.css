@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 426px){
     .mobile-navbar{
-        height: 100svh;
+        height: 100lvh;
         display: flex;
         align-items: center;
         justify-content: left;
