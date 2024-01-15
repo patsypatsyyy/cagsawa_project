@@ -9,12 +9,14 @@
 
     .homeGallery div{
         width: 100%;
+        scroll-snap-type: x mandatory;
     }
 
     .homeGallery div img{
         height: 70vw;
         width: 85vw;
         margin-inline: 1.5vw;
+        scroll-snap-align: center;
     }
 
     .galleryBtn{
@@ -22,16 +24,16 @@
     }
 
     #bookBtn{
-        font-size: 3.5vw;
+        font-size: 16px;
         padding-block: 3vw;
-        padding-inline: 38vw;
+        padding-inline: 30vw;
         border-radius: 2vw;
+        margin-block: 5vw;
     }
 
     #about{
-        font-size: 4vw;
         width: 90%;
-        margin-block: 7vw;
+        margin-block: 5vw;
     }
 
     /* ##################################################### */
@@ -39,10 +41,12 @@
     .busClass{
         width: 90%;
         border: 0.5vw solid #4F6F52;
+        border-radius: 50px;
     }
 
     .busClass td{
-        font-size: 4vw;
+        padding-block: 2%;
+        font-size: 16px;
     }
 
     .busClassContent{
@@ -71,7 +75,7 @@
 
     .busClassSection h2{
         font-size: 5vw;
-        margin: 0 0 5% 0;
+        margin-bottom: 5%;
     }
 
     .busClassInfo{
@@ -88,6 +92,7 @@
 
     .contactInfo{
         width: 90%;
+        margin-bottom: 5%;
     }
 
     .contactInfoMapContainer img{
@@ -98,5 +103,9 @@
         font-size: 4vw;
         padding: 5% 10vw 5% 10vw;
         border-radius: 5vw;
+    }
+
+    .contactInfoMapButton{
+        opacity: 100%;
     }
 }

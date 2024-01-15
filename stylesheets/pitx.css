@@ -56,13 +56,13 @@
 }
 
 .pitx-location p{
-    margin-block: 0.5%;
+    margin: 0.5% 0 0 0;
 }
 
 .pitx-location-map{
     background-color: gray;
     border-radius: 2vw;
-    margin: 0 0 3% 0;
+    margin: 0 0 2% 0;
     width: 70%;
     position: relative;
     display: flex;
@@ -122,7 +122,7 @@
 }
 
 .table-style th{
-    font: 400 1.5vw 'Roboto', sans-serif;
+    font: 400 1.25vw 'Roboto', sans-serif;
     border: 0.25vw solid #4F6F52;
 }
 

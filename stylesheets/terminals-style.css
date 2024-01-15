@@ -1,6 +1,10 @@
 .sectionPart p{
     width: 80%;
-    margin-block: 1%;
+    margin-block: 0.5%;
+}
+
+.sectionPart h2{
+    margin: 2% 0 0.5% 0;
 }
 
 .location-container{
@@ -36,11 +40,6 @@
     justify-content: center;
     flex-direction: column;
 }
-
-.sectionPart h2{
-    margin: 2% 0 1% 0;
-}
-
 
 .terminalMap{
     width: 70%;
