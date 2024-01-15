@@ -8,22 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navButton.addEventListener("click", () => {
         if (navBar.style.width == "0%"){
-            icon.src = "images/icons/hide.png"
-            nav.style.width = "60vw"
-            navBar.style.width = "90%";
-            navList.style.display = "block";
+            showMenu();
         } else {
-            icon.src = "images/icons/show.png"
-            nav.style.width = "25px"
-            navBar.style.width = "0%";
-            navList.style.display = "none";
+            hideMenu();
         }
     })
     
-    navBar.addEventListener("mouseout", () => {
-        icon.src = "images/icons/hide.png"
-        nav.style.width = "25px"
-        navBar.style.width = "0%";
-        navList.style.display = "none";
-    })
+    navBar.addEventListener("mouseout", hideMenu);
 })
+
+function showMenu(){
+    icon.src = "images/icons/hide.png"
+    nav.style.width = "200px"
+    navBar.style.width = "90%";
+    navList.style.display = "block";
+}
+
+function hideMenu(){
+    icon.src = "images/icons/show.png"
+    nav.style.width = "25px"
+    navBar.style.width = "0%";
+    navList.style.display = "none";
+}

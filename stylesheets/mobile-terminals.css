@@ -48,7 +48,7 @@
     .locationBtnDiv button{
         font-size: 16px;
         padding-inline: 25px;
-        padding-block: 5px;
-        border-radius: 5vw;
+        padding-block: 10px;
+        border-radius: 100px;
     }
 }
