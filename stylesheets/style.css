@@ -69,6 +69,10 @@ footer p{
 
 /* --------------------------------- NAVIGATION BAR --------------------------------- */
 
+.mobile-navbar{
+    display: none;
+}
+
 nav{
     background-color: white;
     height: fit-content;
@@ -103,6 +107,7 @@ nav{
     color: green;
     font: 400 2vw 'Bebas Neue', sans-serif;
 }
+
 nav ul{
     padding-block: 1%;
     margin-block: 1%;
@@ -112,9 +117,11 @@ nav ul{
     overflow: hidden;
     width: 75%;
 }
+
 nav li{
     display: inline;
 }
+
 nav a{
     color: white;
     font: 300 1.25vw 'Roboto';
@@ -124,6 +131,7 @@ nav a{
     transition-duration: 200ms;
     padding: 3% 3%;
 }
+
 nav a:hover{
     color: black;
     background-color: white;

@@ -1,8 +1,4 @@
 @media only screen and (max-width: 426px) {
-    .section{
-        width: 100vw;
-    }
-
     .homeGallery{
         margin: 0 0 7.5vw 0;
     }
@@ -92,7 +88,6 @@
 
     .contactInfo{
         width: 90%;
-        margin-bottom: 5%;
     }
 
     .contactInfoMapContainer img{

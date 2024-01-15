@@ -13,11 +13,16 @@
     text-align: center;
     width: 85%;
     margin: 0 0 5% 0;
+    
 }
 
 .table-style th{
     font: 400 1.25vw 'Roboto', sans-serif;
     border: 0.25vw solid #4F6F52;
+}
+
+.table-style th:nth-child(1){
+    width: 30%;
 }
 
 .table-style td{
