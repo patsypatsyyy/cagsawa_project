@@ -5,12 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cagsawa Travel and Tours Incorporated</title>
         <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/mobile-style.css">
         <link rel="stylesheet" href="stylesheets/pitx.css">
+        <link rel="stylesheet" href="stylesheets/mobile-pitx.css">
+        <link rel="stylesheet" href="stylesheets/mobile-navbar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Josefin+Sans:wght@500;600;700&family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="mobile-navbar" style="width: 25px">
+            <div class="mobile-navContents" style="width: 0%; box-shadow: none">
+                <ul style="display: none;">
+                    <a href="index.html" class="activePage"><li>Home</li></a>
+                    <a href="schedule.html"><li>Schedules</li></a>
+                    <a href="terminals.html"><li>Terminals</li></a>
+                    <a href="pitx.html"><li>Pitx</li></a>
+                    <a href="https://busrentalmanila.com/?ref=cagsawabus.com"><li>Bus Rentals</li></a>
+                    <a href="faq.html"><li>FAQ</li></a>
+                </ul>
+            </div>
+            <div id="mobile-showOrHide">
+                <img src="images/icons/show.png" alt="show menu">
+            </div>
+        </div>
+
         <nav>
             <div class="navTitleContainer">
                 <h1>CAGSAWA</h1>
@@ -60,7 +79,7 @@
                 </div>
                 <p><strong>E-mail:</strong> customerservice@pitx.com.ph</p>
                 <p><strong>Address:</strong> Tambo, Parañaque, Metro Manila, Philippines</p>
-                <p><strong>Contact Numbers:</strong> +63(02)8396-3817, +63(02)8396-3818</p>
+                <p><strong>Contact:</strong> +63(02)8396-3817, +63(02)8396-3818</p>
             </div>
             <h1>Cagsawa Bus Schedules from PITX</h1>
             <table id="busRoutes" class="table-style">
@@ -85,5 +104,6 @@
             <p><strong>Disclaimer:</strong> This is not the official website of the Operator. This is only a content websites providing information on the Operator.</p>
         </footer>
         <script src="scripts/pitx.js"></script>
+        <script src="scripts/mobile-navbar.js"></script>
     </body>
 </html>

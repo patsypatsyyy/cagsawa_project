@@ -104,4 +104,12 @@
     .contactInfoMapButton{
         opacity: 100%;
     }
+
+    .contactInfo h2 {
+        margin: 5% 0 1.5% 0;
+    }
+
+    .contactInfo p {
+        margin-block: 1.5%;
+    }
 }
